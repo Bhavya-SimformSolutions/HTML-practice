@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Basics</title>
+    <style>
+        /* Inline CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: navy;
+        }
+        .block {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .inline {
+            border: 1px solid red;
+            padding: 5px;
+        }
+        .layout {
+            display: flex;
+            gap: 20px;
+        }
+        .layout > div {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive HTML Basics</h1>
+
+    <!-- Block and Inline Elements -->
+    <h2>Block and Inline Elements</h2>
+    <div class="block">This is a block-level element.</div>
+    <span class="inline">This is an inline element.</span>
+    <span class="inline">Another inline element.</span>
+
+    <!-- Responsiveness -->
+    <h2>Responsiveness</h2>
+    <p>Resize the browser window to see the image scale responsively.</p>
+    <img src="https://via.placeholder.com/600x300" alt="Responsive Example" class="responsive-img">
+
+    <!-- HTML Semantics -->
+    <h2>HTML Semantics</h2>
+    <article>
+        <h3>Article Title</h3>
+        <p>This is an article element containing content.</p>
+    </article>
+    <section>
+        <h3>Section Title</h3>
+        <p>This is a section element for grouping related content.</p>
+    </section>
+
+    <!-- Entities and Symbols -->
+    <h2>Entities and Symbols</h2>
+    <p>Some special characters: &copy; &reg; &euro; &yen; &lt; &gt; &amp;</p>
+
+    <!-- HTML Forms -->
+    <h2>HTML Forms</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- HTML Graphics -->
+    <h2>HTML Graphics</h2>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 150, 50);
+    </script>
+
+    <!-- HTML Media -->
+    <h2>HTML Media</h2>
+    <audio controls>
+        <source src="audio-sample.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <video controls width="300">
+        <source src="video-sample.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <!-- Cross Browser HTML -->
+    <h2>Cross Browser HTML</h2>
+    <p>This page is designed to work across modern browsers.</p>
+    <iframe src="https://www.example.com" title="Example Website"></iframe>
+
+</body>
+</html>
